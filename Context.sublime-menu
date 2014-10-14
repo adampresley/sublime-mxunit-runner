@@ -1,0 +1,7 @@
+[
+	{
+		"id": "adampresley-mxunitrunnerbrowser",
+		"command": "mx_unit_runner_browser",
+		"caption": "Run MXUnit Tests in the Browser"
+	}
+]

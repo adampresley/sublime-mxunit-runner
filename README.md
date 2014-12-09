@@ -1,7 +1,7 @@
 Sublime Text MXUnit Test Runner
 ===============================
 
-MXUnit Test Runner is a Sublime Text 2 and 3 plugin for running all unit tests for the current open test component. When you have a test CFC open and are exercising all that TDD goodness, you can simply right-click and select *Run MXUnit Tests in the Browser*. This command is also available in the Sublime command palette.
+MXUnit Test Runner is a Sublime Text 2 and 3 plugin for running all, or selected unit tests for the current open test component. When you have a test CFC open and are exercising all that TDD goodness, you can simply right-click and select *Run MXUnit Tests in the Browser*. You may also select a test method and execute this plugin to run only the one test. This command is also available in the Sublime command palette. 
 
 ## Installation
 To install this plugin you need to use git to clone the repository into your sublime packages directory.  The easiest way to find that directory is to go into sublime and select  Prefences -> Browse Packages.  That will open the directory where your packages are installed.  Then go to your shell (cmd, terminal, etc) and git clone this repository.
@@ -45,6 +45,8 @@ The settings demonstrated above must go into a **settings** key in your project 
 
 
 ## History
+* 2014-12-09
+    - Merged in changes from [finalcut](https://github.com/finalcut) to add ability to run a selected (highlighted) test method
 * 2014-10-13
     - Created
 

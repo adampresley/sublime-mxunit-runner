@@ -22,10 +22,9 @@ class MxUnitRunnerBrowserCommand(sublime_plugin.TextCommand):
 		urlPath = fileToOpen.replace(basePath, baseUrl)
 		urlPath = re.sub(r"\\", "/", urlPath) + "?method=runtestremote&output=html"
 
-		#if a user selected a specific test method to run we should just run that one test instead of the entire file.
-		tmLen = len(testMethod)
-		if tmLen > 0:
+		if len(testMethod) > 0:
 			urlPath += "&testMethod=" + testMethod
+
 		urlPath += additionalUrlParameters
 		return urlPath
 

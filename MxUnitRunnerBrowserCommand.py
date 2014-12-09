@@ -20,12 +20,11 @@ class MxUnitRunnerBrowserCommand(sublime_plugin.TextCommand):
 
 	def convertToTestURL(self, fileToOpen, basePath, baseUrl, testMethod, additionalUrlParameters):
 		urlPath = fileToOpen.replace(basePath, baseUrl)
-		urlPath = re.sub(r"\\", "/", urlPath) + "?method=runtestremote&output=html"
+		urlPath = re.sub(r"\\", "/", urlPath) + "?method=runtestremote&output=html" + additionalUrlParameters
 
 		if len(testMethod) > 0:
 			urlPath += "&testMethod=" + testMethod
 
-		urlPath += additionalUrlParameters
 		return urlPath
 
 	def run(self, edit):
